@@ -108,6 +108,12 @@ begin
 
                 end if;
 
+            when others => --Añadimos seguridad
+
+                M_SUBIR <= '0';
+                M_BAJAR <= '0';
+                nxs <= S0;
+
             end case;
 
     end process;
