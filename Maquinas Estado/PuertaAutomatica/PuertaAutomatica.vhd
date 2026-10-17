@@ -90,7 +90,7 @@ begin
                 M_SUBIR <= '0';
                 M_BAJAR <= '1';
 
-                if OBST = '0' then
+                if OBST = '0' then --OBST tiene prioridad sobre FC_CERRADO, si detecta un obstaculo, la puerta debe volver a abrirse
 
                     if FC_CERRADO = '1' then
                         
