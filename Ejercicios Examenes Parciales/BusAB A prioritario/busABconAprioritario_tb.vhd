@@ -1,12 +1,12 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity maquinaEstadoBusAB is
+entity maquinaEstadoBusAB_tb is
 end entity;
 
-architecture testbench of maquinaEstadoBusAB is
+architecture testbench of maquinaEstadoBusAB_tb is
 
-    component maquinaEstado is 
+    component maquinaEstadoBusAB is 
     port(
 
         RST, CLK : in std_logic;
@@ -25,7 +25,7 @@ architecture testbench of maquinaEstadoBusAB is
 
     begin
 
-        UUT: maquinaEstado port map(
+        UUT: maquinaEstadoBusAB port map(
 
             RST => RST,
             CLK => CLK,
